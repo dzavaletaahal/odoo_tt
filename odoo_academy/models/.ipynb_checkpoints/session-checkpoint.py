@@ -36,6 +36,7 @@ class Session(models.Model):
                                         ('canceled', 'Canceled')],
                                        default='draft',
                                        required=True)
+    
     total_price = fields.Float(string='Total Price',
                               related='course_id.total_price')
 
